@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#basket {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+#star {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#score, #lives {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+}
+
+#score {
+    left: 10px;
+}
+
+#lives {
+    right: 10px;
+}
