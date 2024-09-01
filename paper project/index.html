@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--..................nav-section...................-->
+    <header>
+        <nav class="navbar">
+            <div class="logo"> Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+ <!--..................home-section...................-->
+ <section id="home"></section>
+    <div class="home-section">
+        
+        <div class="text-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm [Asmat-Ullah], a passionate web developer with a knack for creating dynamic and responsive websites. Explore my work and get in touch!</p>
+            <button onclick="learnMore()">Learn More</button>
+        </div>
+        <div class="image-content">
+            <img src="img/WhatsApp Image 2024-09-01 at 08.09.54_c9938a02.jpg" alt="Your Image">
+        </div>
+    </div>
+ <!--..................about-section...................-->
+
+
+    <div class="about-section">
+        <section id="about"></section>
+        <section id="about"></section>
+        <div class="image-content">
+            <img src="img/WhatsApp Image 2024-09-01 at 08.09.54_c9938a02.jpg" alt="Your Image">
+        </div>
+        <div class="text-content">
+            <h2>About Me</h2>
+            <p>
+                I'm [Asmat-Ullah], a web developer with a strong background in creating interactive and user-friendly websites. With a passion for coding and a love for learning new technologies, I strive to bring the best web experiences to life.
+            </p>
+            <p>
+                When I'm not coding, you can find me exploring the latest trends in technology, or working on side projects that fuel my creativity. Let's build something amazing together!
+            </p>
+            <button onclick="contactMe()">Contact Me</button>
+        </div>
+    </div>
+ <!--..................project-section...................-->
+    <section id="projects"></section>
+    <div class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="showProjectDetails('project1')">
+                <img src="project1-image.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Brief description of Project 1.</p>
+            </div>
+            <div class="project-card" onclick="showProjectDetails('project2')">
+                <img src="project2-image.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Brief description of Project 2.</p>
+            </div>
+            <div class="project-card" onclick="showProjectDetails('project3')">
+                <img src="project3-image.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Brief description of Project 3.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <!--..................skills-section...................-->
+    <section id="skills"></section>
+    <div class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" onmouseover="showSkillLevel('HTML')" onmouseout="hideSkillLevel()">
+                <h3>HTML</h3>
+                <p class="skill-level" id="HTML">Advanced</p>
+            </div>
+            <div class="skill-card" onmouseover="showSkillLevel('CSS')" onmouseout="hideSkillLevel()">
+                <h3>CSS</h3>
+                <p class="skill-level" id="CSS">Advanced</p>
+            </div>
+            <div class="skill-card" onmouseover="showSkillLevel('JavaScript')" onmouseout="hideSkillLevel()">
+                <h3>JavaScript</h3>
+                <p class="skill-level" id="JavaScript">Intermediate</p>
+            </div>
+            <div class="skill-card" onmouseover="showSkillLevel('React')" onmouseout="hideSkillLevel()">
+                <h3>React.js</h3>
+                <p class="skill-level" id="React">Intermediate</p>
+            </div>
+            <div class="skill-card" onmouseover="showSkillLevel('Node')" onmouseout="hideSkillLevel()">
+                <h3>Node.js</h3>
+                <p class="skill-level" id="Node">Intermediate</p>
+            </div>
+        </div>
+    </div>
+ <!--..................experience-section...................-->
+ <section id="experience"></section>
+ <div class="experience-section">
+    <h2>My Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item" onclick="showExperienceDetails('exp1')">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>web-Designer</h3>
+                <p>WebWorx | Jan 2016 - march 2024</p>
+                <p class="timeline-summary">AS a Frontend Developer.</p>
+            </div>
+        </div>
+        <div class="timeline-item" onclick="showExperienceDetails('exp2')">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Web-Designer</h3>
+                <p>SiteCrafters | April 2024 - may 2024</p>
+                <p class="timeline-summary">AS a backend Developer.</p>
+            </div>
+        </div>
+        <div class="timeline-item" onclick="showExperienceDetails('exp3')">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Web-Designer</h3>
+                <p>CodeWave | June 2024 - aug 2024</p>
+                <p class="timeline-summary">AS a Full-Stag Developer.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="experience-details-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+ <!--..................contact-section...................-->
+
+    <section id="contact">
+        <div class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <span id="name-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    <span id="message-error" class="error-message"></span>
+                </div>
+                <button type="submit">Send Message</button>
+                <span id="form-success" class="success-message"></span>
+            </form>
+        </div>
+
+        <!-- Footer Section -->
+         <section id="footer"></section>
+<footer class="footer-section">
+    <div class="footer-container">
+        <!-- Newsletter Subscription -->
+        <div class="footer-left">
+            <h3>Subscribe to our Newsletter</h3>
+            <form id="newsletter-form" onsubmit="return validateNewsletterForm()">
+                <div class="form-group">
+                    <input type="text" id="newsletter-name" name="name" placeholder="Your Name">
+                    <span id="newsletter-name-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Your Email">
+                    <span id="newsletter-email-error" class="error-message"></span>
+                </div>
+                <button type="submit">Subscribe</button>
+                <span id="newsletter-success" class="success-message"></span>
+            </form>
+        </div>
+        
+        <!-- Social Media Links -->
+        <div class="footer-center">
+            <h3>Connect with me</h3>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <div class="footer-right">
+            <h3>Back to Top</h3>
+            <button id="back-to-top" onclick="scrollToTop()">↑</button>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Asmat-Ullah. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Font Awesome for Social Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Dark/Light Mode Toggle -->
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <span id="mode-text">Light Mode</span>
+    </div>
+
+    <!-- Other sections of your website -->
+
+    <footer id="footer-section">
+        <!-- Footer content -->
+    </footer>
+    
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
