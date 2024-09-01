@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <div class="main">
+            <h3>Hotels and Resort</h3>
+            <button>Check Availability</button>
+        </div>
+    </section>
+    <section class="navigation_bar">
+        <div class="nav_menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Reservation</a>
+            <a href="">Gallery</a>
+            <a href="">contact</a>
+            <a href="">Reviews</a>
+        </div>
+        
+    </section>
+    <section class="slider1">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/home-img-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/home-img-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/home-img-3.jpg" class="d-block w-100" alt="...">
+              </div>
+             
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    
+
+    <section class="calender">
+      <div class="main_box">  
+        <div class="box1">
+          <h3>Check In</h3>
+          <input type="date">
+        </div>
+
+        <div class="box1">
+          <h3>Check Out</h3>
+          <input type="date">
+        </div>
+        <div class="box1">
+          <h3>Adults</h3>
+          <select name="" id="box1_selector">
+            <option value="">0adult &nbsp;&nbsp;</option>
+            <option value="">1adult &nbsp;&nbsp;</option>
+            <option value="">2adult &nbsp;&nbsp;</option>
+
+          </select>
+          
+        </div>
+
+        <div class="box1">
+          <h3>Childs</h3>
+          <select name="" id="box1_selector">
+            <option value="">0child &nbsp;&nbsp;</option>
+            <option value="">1child &nbsp;&nbsp;</option>
+            <option value="">2child &nbsp;&nbsp;</option>
+
+          </select>
+        </div>
+
+        <div class="box1">
+          <h3>Rooms</h3>
+          <select name="" id="box1_selector">
+            <option value="">1room &nbsp;&nbsp;</option>
+            <option value="">2room &nbsp;&nbsp;</option>
+            <option value="">3room &nbsp;&nbsp;</option>
+
+          </select>
+         
+        </div>
+      </div>
+      <button>Check Availability</button>
+    </section>
+
+
+    <section class="staff">
+      <div class="main_stuff">
+        <div class="staff_pic">
+          <img src="images/about-img-1.jpg" alt="">
+        </div>
+        <div class="satff_about">
+          <h3>Best Staff</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. distinctio beatae officiis placeat minima! Rerum adipisci.</p>
+          <button>Make A Reservation</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="food">
+      <div class="main_food">
+        <div class="food_about">
+          <h3>Best Food</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. distinctio beatae officiis  placeat minima!Rerum adipisci.</p>
+          <button>Make A Reservation</button>
+        </div>
+        <div class="food_pic">
+          <img src="images/about-img-2.jpg" alt="">
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section class="staff">
+      <div class="main_stuff">
+        <div class="staff_pic">
+          <img src="images/about-img-3.jpg" alt="">
+        </div>
+        <div class="satff_about">
+          <h3>Swimining pools</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. distinctio beatae officiis placeat minima! Rerum adipisci.</p>
+          <button>Make A Reservation</button>
+        </div>
+      </div>
+    </section>
+    <!-- Our services -->
+    <section class="services">
+      <div class="main_services">
+        <div class="service_box">
+          <img src="images/icon-1.png" alt="icon">
+          <h3>Food & Drinks</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. ut magnam maxime</p>
+        </div>
+
+        <div class="service_box">
+          <img src="images/icon-2.png" alt="icon">
+          <h3>Outdoor Dining</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. ut magnam maxime</p>
+        </div>
+
+        <div class="service_box">
+          <img src="images/icon-3.png" alt="icon">
+          <h3>Beach view</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. ut magnam maxime</p>
+        </div>
+      </div>
+
+      <div class="main_services">
+        <div class="service_box">
+          <img src="images/icon-4.png" alt="icon">
+          <h3>Decorations</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. ut magnam maxime</p>
+        </div>
+
+        <div class="service_box">
+          <img src="images/icon-5.png" alt="icon">
+          <h3>Swimming Pool</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. ut magnam maxime</p>
+        </div>
+
+        <div class="service_box">
+          <img src="images/icon-6.png" alt="icon">
+          <h3>Resort Beach</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. ut magnam maxime</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="form">
+      <div class="main_form">
+        <div class="form1">
+          <h3>Make a Reservation</h3>
+        </div>
+
+
+        <div class="form2">
+          <div class="inner_form2">
+            <h3>Check In</h3>
+            <input type="date">
+            <hr>
+           
+          </div>
+
+          <div class="inner_form2">
+            <h3>Check Out</h3>
+            <input type="date">
+            <hr>
+          </div>   
+      </div>
+
+
+      <div class="form2">
+        <div class="inner_form2">
+          <h3>Adult</h3>
+          <select name="" id="box1_selector">
+            <option value="">1adult &nbsp;&nbsp;</option>
+            <option value="">2adult &nbsp;&nbsp;</option>
+            <option value="">3adult &nbsp;&nbsp;</option>
+
+          </select>
+          <hr>
+         
+        </div>
+
+        <div class="inner_form2">
+          <h3>Child</h3>
+          <select name="" id="box1_selector">
+            <option value="">1child &nbsp;&nbsp;</option>
+            <option value="">2child &nbsp;&nbsp;</option>
+            <option value="">3child &nbsp;&nbsp;</option>
+
+          </select>
+          <hr>
+        </div>   
+
+        
+      </div>
+      <div class="form2">
+        <div class="inner_form2">
+          <h3>Rooms</h3>
+          <select name="" id="box1_selector">
+            <option value="">1room &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option value="">2room &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option value="">3room &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+
+          </select>
+          <hr>
+        </div>
+        
+      </div>
+      <button>Check Availability</button>
+    </section>
+    <section class="slider_swiper1">
+      <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-slide>
+      <img src="images/gallery-img-5.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="images/gallery-img-4.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="images/gallery-img-3.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="images/gallery-img-2.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="images/gallery-img-6.webp" />
+    </swiper-slide>
+    
+   </swiper-container>
+    </section>
+
+    <section class="slider_swiper2">
+      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
+     centered-slides="true" space-between="30" grab-cursor="true">
+     <swiper-slide>
+      <div class="main_swiper">
+        <img src="images/icon-1.png" alt="">
+        <h3>Ali</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ratione amet </p>
+      </div>
+     </swiper-slide>
+     <swiper-slide><div class="main_swiper">
+      <img src="images/icon-1.png" alt="">
+      <h3>Ali</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  maiores autem?</p>
+    </div> </swiper-slide>
+     <swiper-slide><div class="main_swiper">
+      <img src="images/icon-1.png" alt="">
+      <h3>Ali</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  maiores autem?</p>
+    </div></swiper-slide>
+     <swiper-slide><div class="main_swiper">
+      <img src="images/icon-1.png" alt="">
+      <h3>Ali</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  maiores autem?</p>
+    </div></swiper-slide>
+   </swiper-container>
+
+    </section>
+    
+        
+
+
+
+    <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
